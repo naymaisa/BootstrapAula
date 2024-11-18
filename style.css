@@ -1,6 +1,11 @@
 /* Fonte personalizada */
 * {
     font-family: "DynaPuff", system-ui;
+
+}
+
+body {
+    background-color: rgba(244, 242, 240, 0.868);
 }
 
 /* Estilo do cabeçalho */
@@ -12,8 +17,8 @@ header {
     align-items: center;
     /* Alinha verticalmente ao centro */
     padding: 16px 0;
-    background-color: darksalmon;
-    color: rgb(53, 113, 155);
+    background-color: rgb(167, 210, 211);
+    color: rgb(105, 24, 180);
     margin: 0 0px;
     /* Adiciona uma margem horizontal ao cabeçalho */
 }
@@ -57,13 +62,13 @@ header nav li {
 
 /* Estilo dos links no menu */
 header nav li a {
-    color: rgb(53, 113, 155);
+    color: rgb(105, 24, 180);
     text-decoration: none;
 }
 
 /* Efeito de hover nos links */
 header nav li a:hover {
-    color: rgb(100, 150, 200);
+    color: rgb(130, 76, 180);
 }
 
 .container h1 {
@@ -78,6 +83,12 @@ header nav li a:hover {
     margin: 0 auto;
     /* Centraliza o carousel horizontalmente */
     margin-top: 30px;
+
+}
+
+.carousel img {
+    max-height: 600px;
+    /*largura do carousel*/
 }
 
 /* Centraliza o texto nos cabeçalhos dos cards */
@@ -87,4 +98,9 @@ header nav li a:hover {
 
 .card {
     margin-bottom: 16px;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    /*fica preto mas com transparencia, permitindo ver a imagem do fundo*/
 }

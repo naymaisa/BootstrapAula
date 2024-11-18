@@ -13,11 +13,12 @@
 <body>
     <header>
         <div> <!-- Div para centralizar título e menu -->
-            <h1>Nay News</h1>
+            <h1>Zoom News</h1>
             <nav class="opcoes">
                 <ul>
-                    <li><a href="#">Em alta</a></li>
-                    <li><a href="#">Últimas notícias</a></li>
+                    <li><a href="#carousel-exemplo">Em alta</a></li>
+                    <li><a href="#ultimos-posts">Últimos posts</a></li>
+                    <li><a href="#podcast">Podcast</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,23 +31,23 @@
                 <div data-bs-interval="3000" class="carousel-item active">
                     <!--d-block w-100, vai ir para display block ocupando 100% do tamanho, para judatr e ficar menor na tela colocamos o carousel dentro de um container-->
                     <img class="d-block w-100"
-                        src="https://cdn.pixabay.com/photo/2022/12/02/16/52/the-path-7631282_1280.jpg">
+                        src="https://cdn.pixabay.com/photo/2017/08/11/22/43/podcasts-2633018_1280.jpg">
                     <div class="carousel-caption">
-                        <h2>Foto de uma paisagem na floresta</h2>
+                        <h2>A musica e o concentraçao</h2>
                     </div>
                 </div>
                 <div data-bs-interval="3000" class=" carousel-item">
                     <img class="d-block w-100"
-                        src="https://cdn.pixabay.com/photo/2024/02/23/23/58/dog-8593014_1280.jpg">
+                        src="https://cdn.pixabay.com/photo/2024/04/10/12/14/podcast-8687965_1280.jpg">
                     <div class="carousel-caption">
-                        <h2>Foto de um cachorro</h2>
+                        <h2>Nosso ultimo podcast</h2>
                     </div>
                 </div>
                 <div data-bs-interval="3000" class=" carousel-item">
                     <img class="d-block w-100"
                         src="https://cdn.pixabay.com/photo/2022/05/06/20/19/forest-7179046_1280.jpg">
                     <div class="carousel-caption">
-                        <h2>Foto de uma paisagem na floresta no entardecer</h2>
+                        <h2>Lugares para conhecer</h2>
                     </div>
                 </div>
             </div>
@@ -70,8 +71,8 @@
     </div>
 
 
-    <div class="container">
-        <h1>Bootstrap - Cards</h1>
+    <div class="container" id="ultimos-posts">
+        <h1>Ultimas posts</h1>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
                 <!--col-12: Aplica-se a todas as larguras de tela. Para dispositivos pequenos (celulares), cada item ocupa 100% da largura da tela, ou seja, 1 item por linha.
@@ -79,13 +80,15 @@
                     col-lg-4: Aplica-se a partir de telas de 1024px ou mais. Para desktops, cada item ocupa 33,33% da largura, ou seja, 3 itens por linha.-->
                 <article class="card">
                     <header class="card-header">
-                        Desenvolvimento Web
+                        Conheça o destino magico.
                     </header>
-                    <img src="https://via.placeholder.com/100x100" />
+                    <img src="https://cdn.pixabay.com/photo/2020/07/30/10/26/asian-woman-5450041_1280.jpg" />
                     <div class="card-body">
-                        <h4 class="card-title">Cards do Bootstrap</h4>
+                        <h4 class="card-title">China esta entre os destinos mais requisitados</h4>
                         <p class="card-text">
-                            Conheça os Cards do Bootstrap e suas variações.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis voluptas earum
+                            voluptatibus commodi, saepe incidunt hic eaque sint, in quam rerum? Praesentium quae sunt
+                            nemo doloremque cumque officiis sapiente!
                         </p>
                         <a href="#" class="btn btn-primary">Leia mais</a>
                     </div>
@@ -100,13 +103,15 @@
                     col-lg-4: Aplica-se a partir de telas de 1024px ou mais. Para desktops, cada item ocupa 33,33% da largura, ou seja, 3 itens por linha.-->
                 <article class="card">
                     <header class="card-header">
-                        Desenvolvimento Web
+                        Musicas
                     </header>
-                    <img src="https://via.placeholder.com/100x100" />
+                    <img src="https://cdn.pixabay.com/photo/2016/06/11/12/13/pink-hair-1450045_1280.jpg" />
                     <div class="card-body">
-                        <h4 class="card-title">Cards do Bootstrap</h4>
+                        <h4 class="card-title">Top 100 musicas mais ouvidas de 2024</h4>
                         <p class="card-text">
-                            Conheça os Cards do Bootstrap e suas variações.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor maiores aut eaque, mollitia
+                            dicta ipsum cupiditate rerum a quaerat eius recusandae debitis amet impedit sequi. Suscipit
+                            ex repellat officiis. Nobis!
                         </p>
                         <a href="#" class="btn btn-primary">Leia mais</a>
                     </div>
@@ -121,13 +126,15 @@
                     col-lg-4: Aplica-se a partir de telas de 1024px ou mais. Para desktops, cada item ocupa 33,33% da largura, ou seja, 3 itens por linha.-->
                 <article class="card">
                     <header class="card-header">
-                        Desenvolvimento Web
+                        Peace
                     </header>
-                    <img src="https://via.placeholder.com/100x100" />
+                    <img src="https://cdn.pixabay.com/photo/2014/12/16/22/25/woman-570883_1280.jpg" />
                     <div class="card-body">
-                        <h4 class="card-title">Cards do Bootstrap</h4>
+                        <h4 class="card-title">Habitos para uma vida mais saudavel</h4>
                         <p class="card-text">
-                            Conheça os Cards do Bootstrap e suas variações.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum officia, esse, atque dolorum
+                            iste optio officiis cumque dolore aspernatur saepe adipisci nostrum at quod facilis impedit
+                            ex ipsum fugit architecto.
                         </p>
                         <a href="#" class="btn btn-primary">Leia mais</a>
                     </div>
@@ -136,51 +143,58 @@
                     </footer>
                 </article>
             </div>
-            <div class="col-4">
+            <h1>Podcast</h1>
+            <div class="col-4" id="podcast">
                 <div class="card text-bg-dark"><!--letra dentro do card fica branca-->
-                    <img src="https://cdn.pixabay.com/photo/2022/02/07/12/17/street-6999284_960_720.jpg" />
+                    <img src="https://cdn.pixabay.com/photo/2022/11/02/14/32/rosewood-7565066_1280.jpg" />
                     <div class="card-img-overlay"><!--a imagem coolcoada fica dentro do ard com o escrito em cima-->
-                        <h4 class="card-title">Título do Card</h4>
-                        <h5 class="card-subtitle">Subtítulo do Card</h5>
+                        <h4 class="card-title">Saude em jogo</h4>
+                        <h5 class="card-subtitle">Episodio 1</h5>
                         <p class="card-text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
                             officiis eos veritatis.
                         </p>
-                        <a href="#" class="btn btn-primary">Botão link</a>
+                        <a href="#" class="btn btn-primary">Ouça</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src=" https://cdn.pixabay.com/photo/2019/09/19/12/43/portrait-4489207_1280.jpg" />
+                    <div class="card-img-overlay"><!--a imagem coolcoada fica dentro do ard com o escrito em cima-->
+                        <h4 class="card-title">Leitura e longevidade</h4>
+                        <h5 class="card-subtitle">Episodio 2</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                            officiis eos veritatis.
+                        </p>
+                        <a href="#" class="btn btn-primary">Ouça</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card text-bg-dark"><!--letra dentro do card fica branca-->
-                    <img src="https://cdn.pixabay.com/photo/2022/02/07/12/17/street-6999284_960_720.jpg" />
+                    <img src="https://cdn.pixabay.com/photo/2017/02/19/06/00/show-2078995_1280.jpg" />
                     <div class="card-img-overlay"><!--a imagem coolcoada fica dentro do ard com o escrito em cima-->
-                        <h4 class="card-title">Título do Card</h4>
-                        <h5 class="card-subtitle">Subtítulo do Card</h5>
+                        <h4 class="card-title">Musicas para alma</h4>
+                        <h5 class="card-subtitle">Episodio 3</h5>
                         <p class="card-text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
                             officiis eos veritatis.
                         </p>
-                        <a href="#" class="btn btn-primary">Botão link</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card text-bg-dark"><!--letra dentro do card fica branca-->
-                    <img src="https://cdn.pixabay.com/photo/2022/02/07/12/17/street-6999284_960_720.jpg" />
-                    <div class="card-img-overlay"><!--a imagem coolcoada fica dentro do ard com o escrito em cima-->
-                        <h4 class="card-title">Título do Card</h4>
-                        <h5 class="card-subtitle">Subtítulo do Card</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
-                            officiis eos veritatis.
-                        </p>
-                        <a href="#" class="btn btn-primary">Botão link</a>
+                        <a href="#" class="btn btn-primary">Ouça</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Zoom News - Todos os direitos reservados - 2024
+            </p>
+        </div>
+    </footer>
 
     <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
