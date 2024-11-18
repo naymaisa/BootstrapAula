@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div> <!-- Div para centralizar título e menu -->
+            <h1>Nay News</h1>
+            <nav class="opcoes">
+                <ul>
+                    <li><a href="#">Em alta</a></li>
+                    <li><a href="#">Últimas notícias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <!--sempre que for para criar um carousel devemos colocar o data-bs-ride na primeira div, e indicar qual sera a primeira imagem que ira estar aparecendo com active apos o carousel-item-->
+        <!--carousel-fade az com que a transiçao de uma imagem para outra ocorra como surgimento e nao deslize-->
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <!--d-block w-100, vai ir para display block ocupando 100% do tamanho, para judatr e ficar menor na tela colocamos o carousel dentro de um container-->
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2022/12/02/16/52/the-path-7631282_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Foto de uma paisagem na floresta</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class=" carousel-item">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2024/02/23/23/58/dog-8593014_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Foto de um cachorro</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class=" carousel-item">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2022/05/06/20/19/forest-7179046_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Foto de uma paisagem na floresta no entardecer</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!--icone de seta para voltar a imagem do carousel-->
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <!--para criar a barrinha que indica em qual slide estamos e para qual vamos-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <h1>Bootstrap - Cards</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <!--col-12: Aplica-se a todas as larguras de tela. Para dispositivos pequenos (celulares), cada item ocupa 100% da largura da tela, ou seja, 1 item por linha.
+                    col-md-6: Aplica-se a partir de telas de 768px ou mais. Para tablets, cada item ocupa 50% da largura, ou seja, 2 itens por linha.
+                    col-lg-4: Aplica-se a partir de telas de 1024px ou mais. Para desktops, cada item ocupa 33,33% da largura, ou seja, 3 itens por linha.-->
+                <article class="card">
+                    <header class="card-header">
+                        Desenvolvimento Web
+                    </header>
+                    <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-title">Cards do Bootstrap</h4>
+                        <p class="card-text">
+                            Conheça os Cards do Bootstrap e suas variações.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>13/11/2024 às 19:00:00</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <!--col-12: Aplica-se a todas as larguras de tela. Para dispositivos pequenos (celulares), cada item ocupa 100% da largura da tela, ou seja, 1 item por linha.
+                    col-md-6: Aplica-se a partir de telas de 768px ou mais. Para tablets, cada item ocupa 50% da largura, ou seja, 2 itens por linha.
+                    col-lg-4: Aplica-se a partir de telas de 1024px ou mais. Para desktops, cada item ocupa 33,33% da largura, ou seja, 3 itens por linha.-->
+                <article class="card">
+                    <header class="card-header">
+                        Desenvolvimento Web
+                    </header>
+                    <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-title">Cards do Bootstrap</h4>
+                        <p class="card-text">
+                            Conheça os Cards do Bootstrap e suas variações.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>13/11/2024 às 19:00:00</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <!--col-12: Aplica-se a todas as larguras de tela. Para dispositivos pequenos (celulares), cada item ocupa 100% da largura da tela, ou seja, 1 item por linha.
+                    col-md-6: Aplica-se a partir de telas de 768px ou mais. Para tablets, cada item ocupa 50% da largura, ou seja, 2 itens por linha.
+                    col-lg-4: Aplica-se a partir de telas de 1024px ou mais. Para desktops, cada item ocupa 33,33% da largura, ou seja, 3 itens por linha.-->
+                <article class="card">
+                    <header class="card-header">
+                        Desenvolvimento Web
+                    </header>
+                    <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-title">Cards do Bootstrap</h4>
+                        <p class="card-text">
+                            Conheça os Cards do Bootstrap e suas variações.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>13/11/2024 às 19:00:00</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark"><!--letra dentro do card fica branca-->
+                    <img src="https://cdn.pixabay.com/photo/2022/02/07/12/17/street-6999284_960_720.jpg" />
+                    <div class="card-img-overlay"><!--a imagem coolcoada fica dentro do ard com o escrito em cima-->
+                        <h4 class="card-title">Título do Card</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                            officiis eos veritatis.
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark"><!--letra dentro do card fica branca-->
+                    <img src="https://cdn.pixabay.com/photo/2022/02/07/12/17/street-6999284_960_720.jpg" />
+                    <div class="card-img-overlay"><!--a imagem coolcoada fica dentro do ard com o escrito em cima-->
+                        <h4 class="card-title">Título do Card</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                            officiis eos veritatis.
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark"><!--letra dentro do card fica branca-->
+                    <img src="https://cdn.pixabay.com/photo/2022/02/07/12/17/street-6999284_960_720.jpg" />
+                    <div class="card-img-overlay"><!--a imagem coolcoada fica dentro do ard com o escrito em cima-->
+                        <h4 class="card-title">Título do Card</h4>
+                        <h5 class="card-subtitle">Subtítulo do Card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                            officiis eos veritatis.
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

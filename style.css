@@ -1,0 +1,90 @@
+/* Fonte personalizada */
+* {
+    font-family: "DynaPuff", system-ui;
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    /* Flexbox para posicionamento */
+    justify-content: center;
+    /* Centraliza os itens no eixo horizontal */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
+    padding: 16px 0;
+    background-color: darksalmon;
+    color: rgb(53, 113, 155);
+    margin: 0 0px;
+    /* Adiciona uma margem horizontal ao cabeçalho */
+}
+
+/* O conteúdo do cabeçalho será centralizado */
+header>div {
+    display: flex;
+    /* Flexbox dentro do cabeçalho */
+    justify-content: space-between;
+    /* Espaça o título e o menu para as extremidades */
+    width: 100%;
+    /* Preenche toda a largura do cabeçalho */
+    max-width: 1200px;
+    /* Limita a largura máxima (opcional, ajusta conforme necessário) */
+}
+
+/* Título */
+header h1 {
+    margin: 0;
+    /* Remove a margem do título */
+    font-size: 3rem;
+    /* Define o tamanho da fonte */
+
+}
+
+/* Estilo da navegação */
+header nav ul {
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Flexbox para o menu */
+}
+
+header nav li {
+    margin-left: 16px;
+    /* Distância entre os itens do menu */
+    font-size: 20px;
+}
+
+/* Estilo dos links no menu */
+header nav li a {
+    color: rgb(53, 113, 155);
+    text-decoration: none;
+}
+
+/* Efeito de hover nos links */
+header nav li a:hover {
+    color: rgb(100, 150, 200);
+}
+
+.container h1 {
+    padding: 16px;
+}
+
+.carousel {
+    max-width: 1000px;
+    /* Limite a largura do carousel em 1200px (ou ajuste conforme necessário) */
+    width: 100%;
+    /* Garante que o carousel ocupe 100% da largura disponível até o limite máximo */
+    margin: 0 auto;
+    /* Centraliza o carousel horizontalmente */
+    margin-top: 30px;
+}
+
+/* Centraliza o texto nos cabeçalhos dos cards */
+.card-header {
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 16px;
+}
